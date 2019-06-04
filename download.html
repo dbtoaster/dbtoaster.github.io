@@ -88,10 +88,55 @@
     <div class="contentwrapper">
       <div class="content">
                 <div class="titlebox">Downloads</div><!--?php if(!isset($now_building_distro)) { ?-->
-<a name="latest"><h4>DBToaster Release 2.2</h4></a>
+<a name="latest"><h4>DBToaster Release 2.3</h4></a>
 <table class="table">
 <thead>
   <th width="30%" align="right">Binaries</th>
+  <th width="20%" align="left">Version</th>
+  <th width="20%" align="left">Date</th>
+  <th width="20%" align="left">Download</th>  
+</thead>
+<tr>
+  <td align="left"> &nbsp;&nbsp; macOS 10.6 (or above)</td>
+  <td><a href="https://github.com/dbtoaster/dbtoaster-backend/releases/tag/2.3">2.3</a></td>
+  <td>2019-Jun-04</td>
+  <td align="left">
+    <a class="btn btn-primary" href="dist/dbtoaster_2.3_darwin.tgz">&nbsp;&nbsp;Tarball&nbsp;&nbsp;</a></td>
+</tr>
+<tr>
+  <td align="left"> &nbsp;&nbsp; Linux (x86-64)</td>
+  <td><a href="https://github.com/dbtoaster/dbtoaster-backend/releases/tag/2.3">2.3</a></td>
+  <td>2019-Jun-04</td>
+  <td align="left">
+    <a class="btn btn-primary" href="dist/dbtoaster_2.3_linux.tgz">&nbsp;&nbsp;Tarball&nbsp;&nbsp;</a></td>
+</tr>
+<!--tr>
+  <td align="left">&nbsp;&nbsp; Windows (Cygwin)</td>
+  <td><a href="https://github.com/dbtoaster/dbtoaster-backend/releases/tag/2.3">2.3</a></td>
+  <td>2019-Jun-04</td>
+  <td align="left">
+    <a class="btn btn-primary" href="dist/dbtoaster_2.3_cygwin.tgz">&nbsp;&nbsp;Tarball&nbsp;&nbsp; </a></td>
+</tr-->
+<tr>
+  <td align="left"><b>Documentation</b></td>
+  <td></td>
+  <td></td>
+  <td align="left">
+    <a href="docs.html"  class="btn btn-primary">&nbsp;&nbsp;Online&nbsp;&nbsp;</a>  </td>
+</tr>
+<tr>
+  <td align="left"><b>Examples</b></td>
+  <td></td>
+  <td></td>
+  <td align="left">
+    <a href="samples.html"  class="btn btn-primary">&nbsp;&nbsp;Online&nbsp;&nbsp;</a>  </td>
+</tr>
+</table>
+
+<a name="older"><h4>Older releases</h4></a>
+<table class="table">
+<thead>
+  <th width="30%" align="right">Binaries (Release 2.2)</th>
   <th width="20%" align="left">Revision</th>
   <th width="20%" align="left">Date</th>
   <th width="20%" align="left">Download</th>  
@@ -117,23 +162,7 @@
   <td align="left">
     <a class="btn btn-primary" href="dist/dbtoaster_cygwin_3387.tgz">&nbsp;&nbsp;Tarball&nbsp;&nbsp; </a></td>
 </tr>
-<tr>
-  <td align="left"><b>Documentation</b></td>
-  <td>3387</td>
-  <td>2015-Nov-27</td>
-  <td align="left">
-    <a href="docs.html"  class="btn btn-primary">&nbsp;&nbsp;Online&nbsp;&nbsp;</a>  </td>
-</tr>
-<tr>
-  <td align="left"><b>Examples</b></td>
-  <td>3387</td>
-  <td>2015-Nov-27</td>
-  <td align="left">
-    <a href="samples.html"  class="btn btn-primary">&nbsp;&nbsp;Online&nbsp;&nbsp;</a>  </td>
-</tr>
 </table>
-
-<a name="older"><h4>Older releases</h4></a>
 <table class="table">
 <thead>
   <th width="30%" align="right">Binaries (Release 2.1)</th>
@@ -296,7 +325,17 @@
 <h3>2. Benchmarking and Experimentation</h3>
 <p>You are invited to perform and report on benchmark results and experimental comparisons of your system against DBToaster, but we ask you for fairness and to run DBToaster with settings that allow it to perform at its best. Specifically, the DBToaster interpreter is provided for your convenience and is not to be used for timing purposes. For the purpose of comparison with other data management systems, please use the C++ rather than the Scala backend. Please contact us if you have questions about how to optimize the performance of DBToaster.</p>
 
-<a name="changelog"><h3>3. DBToaster Changelog</h3></a><H4 style="border-bottom:thin double;">Release 2.2 (revision 3387) - 2015/11/27</H4>
+
+<a name="changelog"><h3>3. DBToaster Changelog</h3></a>
+
+<H4 style="border-bottom:thin double;">Release 2.3 - 2019/06/04</H4>
+<ul>
+<li> Added Pardis code generator for Scala and C++. Pardis is now the default Scala codegen. </li>
+<li> Enabled custom payload types in vanilla C++. </li>
+<li> Various frontend and backend optimizations. </li>
+</ul>
+
+<H4 style="border-bottom:thin double;">Release 2.2 (revision 3387) - 2015/11/27</H4>
 <ul>
 <li>Added support for batch updates via flags <tt>--batch</tt> and <tt>--xbs &lt;BATCH_SIZE&gt;</tt>.</li>
 <li>Added flag <tt>HEURISTICS-DECOMPOSE-OVER-TABLES</tt> that decomposes expressions in which one static table joins with two or more streams.</li>
